@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    .Grid-container {
+            Display: grid;
+            grid-template-columns: auto auto auto;
+            background-color:blue;
+            padding: 10px;
+        }
+
+    .Grid-item {
+            background-color: aqua;
+            border: 2px solid black;
+            padding: 10px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+       .Grid-container2 {
+            Display:inline-grid;
+            grid-template-columns: auto auto auto;
+            background-color:blue;
+            padding: 10px;
+        }
+
+    .Grid-item {
+            background-color: aqua;
+            border: 1px solid black;
+            padding: 10px;
+            font-size: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Display-grid</h2>
+    <p>display: grid; to make a block-level grid container:</p>
+    <div class="Grid-container">
+        <div class="Grid-item">1</div>
+        <div class="Grid-item">2</div>
+        <div class="Grid-item">3</div>
+        <div class="Grid-item">4</div>
+        <div class="Grid-item">5</div>
+        <div class="Grid-item">6</div>
+        <div class="Grid-item">7</div>
+        <div class="Grid-item">8</div>
+        <div class="Grid-item">9</div>
+    </div>
+     
+    <h2>Display:inline-grid</h2>
+    <p>display:inline-grid; to make a inline-grid container:</p>
+    <div class="Grid-container2">
+        <div class="Grid-item">1</div>
+        <div class="Grid-item">2</div>
+        <div class="Grid-item">3</div>
+        <div class="Grid-item">4</div>
+        <div class="Grid-item">5</div>
+        <div class="Grid-item">6</div>
+        <div class="Grid-item">7</div>
+        <div class="Grid-item">8</div>
+        <div class="Grid-item">9</div>
+    </div>
+
+</body>
+</html>

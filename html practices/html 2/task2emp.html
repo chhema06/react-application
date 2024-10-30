@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const employees = [
+    { name: "John", age: 28, salary: 4000 },
+    { name: "Jane", age: 35, salary: 5000 },
+    { name: "Jim", age: 42, salary: 5500 },
+    { name: "Jill", age: 31, salary: 4500 },
+    { name: "Jack", age: 29, salary: 4200 },
+    { name: "Jerry", age: 33, salary: 4800 },
+];
+const filteredEmployees = employees.filter(employee => employee.age > 30);
+const totalSalary = filteredEmployees.reduce((sum, employee) => sum + employee.salary, 0);
+console.log(totalSalary);
+    </script>
+</body>
+</html>

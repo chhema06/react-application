@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Style Carrom Board</title>
+    <style>
+        body {
+            background-color: #184d47;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .carrom-frame {
+            border: 5px solid #8B4513; /* Brown color for the frame */
+            width: 400px;
+            height: 400px;
+            position: relative;
+            background-color: #f0d7a2; /* Light wood color */
+            box-shadow: 0 0 10px 1px black;
+        }
+
+        /* Pockets */
+        .pocket {
+            width: 40px;
+            height: 40px;
+            background-color: #333; /* Dark color for pockets */
+            position: absolute;
+            border-radius: 50%;
+        }
+        .pocket.top-left { top: 0; left: 0; }
+        .pocket.top-right { top: 0; right: 0; }
+        .pocket.bottom-left { bottom: 0; left: 0; }
+        .pocket.bottom-right { bottom: 0; right: 0; }
+
+        /* Bases */
+        .base {
+            position: absolute;
+            background-color: #8B4513; /* Brown for bases */
+        }
+        .top-base {
+            height: 5%;
+            width: 60%;
+            top: 10%;
+            left: 20%;
+        }
+        .right-base {
+            width: 5%;
+            height: 60%;
+            top: 20%;
+            right: 10%;
+        }
+        .bottom-base {
+            height: 5%;
+            width: 60%;
+            bottom: 10%;
+            left: 20%;
+        }
+        .left-base {
+            width: 5%;
+            height: 60%;
+            top: 20%;
+            left: 10%;
+        }
+
+        /* Center Circle */
+        .circle {
+            width: 152px;
+            height: 152px;
+            border: 3px solid #8B4513; /* Dark brown for the circle */
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #f0d7a2; /* Light wood color */
+        }
+
+        /* Corner Lines */
+        .corner-line {
+            position: absolute;
+            background-color: #8B4513; /* Brown color for lines */
+        }
+        .corner-line.top-left {
+            width: 50px; height: 5px; top: 0; left: 0;
+        }
+        .corner-line.top-right {
+            width: 50px; height: 5px; top: 0; right: 0;
+        }
+        .corner-line.bottom-left {
+            width: 50px; height: 5px; bottom: 0; left: 0;
+        }
+        .corner-line.bottom-right {
+            width: 50px; height: 5px; bottom: 0; right: 0;
+        }
+        .corner-line.vertical {
+            width: 5px; height: 50px; top: 0; left: 50%;
+            transform: translateX(-50%);
+        }
+        .corner-line.horizontal {
+            width: 5px; height: 50px; left: 0; top: 50%;
+            transform: translateY(-50%);
+        }
+
+        /* Arrows */
+        .arrow {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: gray;
+            border-radius: 50%;
+        }
+        .arrow-1 { top: 12%; left: 12%; }
+        .arrow-2 { top: 12%; right: 12%; }
+        .arrow-3 { bottom: 12%; right: 12%; }
+        .arrow-4 { bottom: 12%; left: 12%; }
+
+    </style>
+</head>
+<body>
+    <div class="carrom-frame">
+        <!-- Pockets -->
+        <div class="pocket top-left"></div>
+        <div class="pocket top-right"></div>
+        <div class="pocket bottom-left"></div>
+        <div class="pocket bottom-right"></div>
+ 
+        <!-- Bases -->
+        <div class="base top-base"></div>
+        <div class="base right-base"></div>
+        <div class="base bottom-base"></div>
+        <div class="base left-base"></div>
+
+        <!-- Center Circle -->
+        <div class="circle"></div>
+
+        <!-- Corner Lines -->
+        <div class="corner-line top-left"></div>
+        <div class="corner-line top-right"></div>
+        <div class="corner-line bottom-left"></div>
+        <div class="corner-line bottom-right"></div>
+        <div class="corner-line vertical" style="top: 0; left: 50%;"></div>
+        <div class="corner-line horizontal" style="left: 0; top: 50%;"></div>
+
+        <!-- Arrows -->
+        <div class="arrow arrow-1"></div>
+        <div class="arrow arrow-2"></div>
+        <div class="arrow arrow-3"></div>
+        <div class="arrow arrow-4"></div>
+    </div>
+</body>
+</html>

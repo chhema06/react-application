@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 2px solid black;
+            width: 150px;
+            height: 50px;
+            background-color: blueviolet;
+            overflow: visible;
+        }
+        .hidden{
+            border: 2px solid black;
+            width: 150px;
+            height: 50px;
+            background-color: rgb(70, 43, 226);
+            overflow:hidden;
+        }
+        .scroll{
+            border: 2px solid black;
+            width: 150px;
+            height: 50px;
+            background-color:green;
+            overflow:scroll;
+        }
+        .auto{
+            border: 2px solid black;
+            width: 150px;
+            height: 50px;
+            background-color:rgb(128, 0, 0);
+            overflow:auto;
+        }
+        .overflowxy{
+            border: 2px solid black;
+            width: 200px;
+            height: 50px;
+            background-color:coral;
+            overflow-x: scroll;
+            overflow-y: hidden;
+        }
+    </style>
+</head>
+<body>
+    <h2>overflow-visible</h2>
+    <p>The overflow is not clipped. The content renders outside the element's box</p>
+    <div>The overflow property specifies whether to clip the content or to 
+        add scrollbars when the content of an element is too big to fit in the specified area.</div><br><br><br><br>
+
+        <h2>overflow-hidden</h2>
+    <p>The overflow is not clipped. The content renders outside the element's box</p>
+    <div class="hidden">The overflow property specifies whether to clip the content or to 
+        add scrollbars when the content of an element is too big to fit in the specified area.</div><br><br>
+
+        <h2>overflow-scroll</h2>
+    <p>The overflow is not clipped. The content renders outside the element's box</p>
+    <div class="scroll">The overflow property specifies whether to clip the content or to 
+        add scrollbars when the content of an element is too big to fit in the specified area.</div><br><br>
+
+        <h2>overflow-auto</h2>
+    <p>The overflow is not clipped. The content renders outside the element's box</p>
+    <div class="auto">The overflow property specifies whether to clip the content or to 
+        add scrollbars when the content of an element is too big to fit in the specified area.</div><br><br>
+
+        <h2>overflow-x ,overflow-y</h2>
+    <p>The overflow is not clipped. The content renders outside the element's box</p>
+    <div class="overflowxy">The overflow property specifies whether to clip the content or to 
+        add scrollbars when the content of an element is too big to fit in the specified area.</div><br><br>
+
+</body>
+</html>

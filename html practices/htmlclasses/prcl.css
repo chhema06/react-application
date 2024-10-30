@@ -1,0 +1,42 @@
+body {
+    background-color: #f0f0f0; /* Light background for contrast */
+}
+
+.box {
+    /* Content properties */
+    width: 300px;         /* Width of the content */
+    height: auto;         /* Height will adjust based on content */
+    background-color: #4CAF50; /* Background color of the content */
+    color: white;         /* Text color */
+    text-align: center;   /* Center the text */
+    line-height: 1.5;     /* Line height for text spacing */
+    
+    /* Padding properties */
+    padding: 20px;        /* Space between content and border */
+
+    /* Border properties */
+    border: 5px solid #333; /* Solid border with color and width */
+
+    /* Margin properties */
+    margin: 30px;         /* Space outside the border */
+}
+
+h2 {
+    margin: 0;            /* Remove default margin for h2 */
+}
+
+p {
+    margin: 10px 0;       /* Margin above and below the paragraph */
+}
+
+button {
+    padding: 10px 15px;   /* Padding inside the button */
+    background-color: #fff; /* Button background */
+    border: none;         /* No border */
+    color: #4CAF50;       /* Button text color */
+    cursor: pointer;      /* Pointer cursor on hover */
+}
+
+button:hover {
+    background-color: #ddd; /* Light background on hover */
+}

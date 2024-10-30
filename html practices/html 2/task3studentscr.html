@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const students = [
+    { name: "Alice", score: 85 },
+    { name: "Bob", score: 92 },
+    { name: "Charlie", score: 67 },
+    { name: "David", score: 74 },
+    { name: "Eve", score: 88 },
+    { name: "Frank", score: 50 },
+];
+const highScoringStudents = students.filter(student => student.score > 70);
+console.log(highScoringStudents)
+
+const highestScore = Math.max(...highScoringStudents.map(i => i.score));
+
+const topScoreStudents = highScoringStudents.filter(i => i.score === highestScore);
+
+console.log(topScoreStudents)
+const topScoreStudentNames = topScoreStudents.map(student => student.name);
+console.log(topScoreStudentNames)
+
+    </script>
+</body>
+</html>

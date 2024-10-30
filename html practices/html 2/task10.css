@@ -1,0 +1,23 @@
+
+
+
+.container h1{
+    background-color: blue;
+    font-size: 1.5rem;
+    color: aliceblue;
+    text-align: center;
+    padding: 20px;
+    height: 50px;
+     
+}
+
+h2{
+    background-color: rgb(117, 199, 55);
+    font-size: 2em;
+    color: aliceblue;
+    text-align: center;
+    padding: 20px;
+    height: 50px;
+
+}
+
